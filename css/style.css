@@ -1,0 +1,215 @@
+.hero.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  width: 100%;
+  box-sizing: border-box;
+}
+.hero.container .card {
+  background-color: white;
+  color: rgb(8, 8, 8);
+  text-align: center;
+  border-radius: 7px;
+}
+.hero.container .link {
+  background-color: rgb(203, 138, 179);
+  font-family: "Courier New", sans-serif;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.hero.container .link:hover {
+  color: green;
+}
+
+.site-footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgb(109, 146, 134);
+  padding: 2rem;
+  text-align: center;
+}
+.site-footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: rgb(203, 138, 179);
+  font-family: "Courier New", sans-serif;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:hover {
+  color: green;
+}
+
+.container.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .container.grid {
+    grid-template-columns: 1fr;
+  }
+}
+.container.grid .card {
+  background-color: white;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 5px;
+}
+.container.grid .sidebar {
+  background-color: white;
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+.container.grid .sidebar h4 {
+  margin-bottom: 1rem;
+}
+.container.grid .sidebar .hours {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.container.grid .link {
+  background-color: rgb(203, 138, 179);
+  font-family: "Courier New", sans-serif;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.container.grid .link:hover {
+  color: green;
+}
+
+.site-header {
+  background-color: rgb(109, 146, 134);
+}
+.site-header .container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+}
+.site-header .container:hover {
+  color: green;
+}
+.site-header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site-header .btn-primary {
+  background-color: rgb(203, 138, 179);
+  font-family: "Courier New", sans-serif;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.site-header .btn-primary:hover {
+  color: green;
+}
+
+body {
+  font-size: 14px;
+  background-color: rgb(109, 146, 134);
+  font-family: "Courier New", sans-serif;
+  color: rgb(8, 8, 8);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.site-header {
+  position: relative;
+}
+.site-header .banner {
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", sans-serif;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300vh;
+  background-position: center;
+}
+.site-header .main-nav {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.site-header .nav-link {
+  margin: 0 1rem;
+}
+
+h1, h2 {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: double;
+}
+
+h3, h4 {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+p, a, li {
+  color: rgb(0, 0, 0);
+}
+
+.hero {
+  padding: 2rem;
+  text-align: center;
+}
+.hero h2 {
+  margin-bottom: 1rem;
+}
+.hero p {
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

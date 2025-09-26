@@ -1,0 +1,74 @@
+@use 'variables';
+@use 'layout';
+@use 'mixins';
+
+body {
+    font-size: variables.$text-size;
+    background-color: variables.$primary-color;
+    font-family: variables.$font-style;
+    color: variables.$text-color;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: 100vh;
+    line-height: variables.$line-height;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.site-header {
+    position: relative;
+
+    .banner {
+    color: rgb(255, 255, 255);
+    font-family: variables.$logo-font;
+    font-size: variables.$logo-text-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300vh;
+    background-position: center;
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .nav-link {
+        margin: 0 1rem;
+    }
+}
+
+h1, h2 {
+    color: rgb(0, 0, 0);
+    font-weight: variables.$font-weight-1;
+    text-decoration: double;
+}
+
+h3, h4 {
+    color: rgb(0, 0, 0);
+    font-weight: variables.$font-weight-1;
+}
+
+p, a, li {
+    color: rgb(0, 0, 0);
+}
+
+.hero {
+    padding: 2rem;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+}

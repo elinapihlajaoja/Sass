@@ -1,0 +1,89 @@
+@use 'variables';
+@use 'mixins';
+
+.hero.container {
+    @include mixins.grid-container;
+
+    .card {
+        background-color: variables.$card-color;
+        color: variables.$text-color;
+        text-align: center;
+        border-radius: 7px;
+    }
+
+    .link {
+        @include mixins.button;
+    }
+}
+
+.site-footer {
+    @include mixins.container;
+    padding: 2rem;
+    text-align: center;
+
+    .social {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+.btn {
+    @include mixins.button;
+}
+
+.container.grid {
+    @include mixins.grid-container;
+
+    @include mixins.responsive(mobile) {
+            grid-template-columns: 1fr;
+        }
+    
+
+    .card {
+        background-color: variables.$card-color;
+        text-align: center;
+        margin: 1rem;
+        border-radius: 5px;
+    }
+    .sidebar {
+    background-color: variables.$sidebar-color;
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+
+    h4 {
+        margin-bottom: 1rem;
+    }
+
+    .hours {
+        list-style: none;
+        padding: 0;
+        text-align: center
+    }
+}
+    
+    .link {
+        @include mixins.button
+    }
+}
+
+.site-header {
+    background-color: variables.$primary-color;
+
+    .container {
+        @include mixins.nav-list;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-primary {
+        @include mixins.button;
+    }
+}
+
